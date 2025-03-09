@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -69,6 +68,15 @@ export default {
 					accent: '#E63946',        // Red for CTA
 					light: '#F5F5F5',         // Light background
 					dark: '#1A2A40',          // Dark text
+					purple: {
+						primary: '#8B5CF6',    // Primary Purple
+						secondary: '#7E69AB',  // Secondary Purple
+						tertiary: '#6E59A5',   // Tertiary Purple
+						dark: '#1A1F2C',       // Dark Purple
+						light: '#D6BCFA',      // Light Purple
+						soft: '#E5DEFF',       // Soft Purple
+						vivid: '#8B5CF6',      // Vivid Purple
+					}
 				}
 			},
 			borderRadius: {

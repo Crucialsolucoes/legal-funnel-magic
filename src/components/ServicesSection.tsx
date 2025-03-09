@@ -2,6 +2,8 @@
 import { useSiteData } from "@/context/SiteDataContext";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import * as LucideIcons from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ServicesSection: React.FC = () => {
   const { firmData } = useSiteData();
@@ -36,6 +38,17 @@ const ServicesSection: React.FC = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="flex justify-center mt-12">
+          <Button 
+            variant="custom" 
+            size="lg" 
+            className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-medium"
+            asChild
+          >
+            <Link to="/contato">Consulte Nossos Serviços</Link>
+          </Button>
         </div>
       </div>
     </section>
