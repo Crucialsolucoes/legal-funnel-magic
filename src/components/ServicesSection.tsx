@@ -15,8 +15,9 @@ const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section id="services" className="bg-lawyer-light py-16 md:py-24">
-      <div className="section-container">
+    <section id="services" className="bg-lawyer-light py-16 md:py-24 relative">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589216532814-cf882bca9dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')] bg-fixed bg-cover opacity-5"></div>
+      <div className="section-container relative z-10">
         <h2 className="section-title">Nossos Serviços</h2>
         <p className="section-subtitle">
           Assistência jurídica especializada em Direito Previdenciário para garantir seus direitos junto ao INSS
@@ -44,7 +45,7 @@ const ServicesSection: React.FC = () => {
           <Button 
             variant="custom" 
             size="lg" 
-            className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-medium"
+            className="bg-lawyer-purple-primary hover:bg-lawyer-purple-tertiary text-white font-medium shadow-md"
             asChild
           >
             <Link to="/contato">Consulte Nossos Serviços</Link>

@@ -17,11 +17,11 @@ const HeroSection: React.FC = () => {
           {firmData.heroSubtitle}
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <Button className="btn-primary text-lg px-8 py-6" size="lg">
+          <Button className="bg-lawyer-accent text-white hover:bg-lawyer-accent/90 text-lg px-8 py-6" size="lg">
             <a href="#contact">Fale com um Especialista</a>
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6" size="lg">
+          <Button variant="outline" className="border-white text-white bg-transparent hover:bg-white/10 text-lg px-8 py-6" size="lg">
             <a href="#services">Nossos Serviços</a>
           </Button>
         </div>

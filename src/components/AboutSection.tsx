@@ -59,7 +59,7 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="absolute -top-4 -right-4 w-2/3 h-2/3 bg-lawyer-secondary/20 rounded-lg -z-10"></div>
             <img 
-              src="/placeholder.svg" 
+              src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" 
               alt="Escritório de advocacia" 
               className="rounded-lg shadow-xl w-full object-cover h-[500px]"
             />
