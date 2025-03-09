@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,32 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif font-bold text-lawyer-dark mb-6 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-lawyer-dark/70 mb-12 text-center max-w-3xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply bg-lawyer-accent text-white px-6 py-3 rounded-md font-medium hover:bg-lawyer-accent/90 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-lawyer-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-lawyer-secondary/90 transition-colors;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-lawyer-primary text-lawyer-primary px-6 py-2.5 rounded-md font-medium hover:bg-lawyer-primary/10 transition-colors;
   }
 }
